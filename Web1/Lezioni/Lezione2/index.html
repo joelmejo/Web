@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione2</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+        }
+        tr:nth-child(even){
+            background-color: yellow;
+        }
+        tr:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Int1</th>
+            <th>Int2</th>
+            <th>Int3</th>
+        </tr>
+        <tr>
+            <td id="p1_1">Prima cella</td>
+            <td>Seconda cella</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">2_1_</td>
+            <!-- <td>2_2</td> -->
+            <td>2_3</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">3_1</td>
+            <!-- <td>3_2</td> -->
+            <td>3_3</td>
+        </tr>
+        <tr>
+            <!-- <td>4_1</td> -->
+            <!-- <td>4_2</td> -->
+            <td>4_3</td>
+        </tr>
+    </table>
+    <br>
+    <iframe src="./sottopagina.html"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ejwb6b_ExbU?si=DFZPjwJ32KLmSx0X&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Lorem ipsum <span style="background-color: aquamarine;">dolor sit</span> amet consectetur, adipisicing elit. Commodi veritatis, dolorem incidunt eaque repudiandae expedita? Reprehenderit in earum dignissimos aliquam non debitis sunt voluptates, distinctio inventore aperiam voluptate fuga corrupti.</p>
+    <h1>Lista della spesa</h1>
+    <ul>
+        <li>Pane</li>
+        <li>Latte</li>
+        <li>Banane</li>
+        <li>Pasta</li>
+    </ul>
+    <br>
+    <h1>Pasta al pomodoro</h1>
+    <ol start="3" style="list-style-type: upper-roman;">
+        <li>
+            Metti l'acqua nella pentola
+            <ul style="list-style-type: square;">
+                <li>Acqua</li>
+                <li>Pentola</li>
+            </ul>
+        </li>
+        <li>Metti la pentola sul fuoco</li>
+        <li>Aspetta che lacqua arrivi a 100 gradi</li>
+    </ol>
+</body>
+</html>

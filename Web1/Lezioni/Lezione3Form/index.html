@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function invioForm(){
+            var frm = document.getElementById("frm");
+            console.log
+        }
+    </script>
+</head>
+<body>
+    <form action="/invioform" method="post" onsubmit="invioForm" id="frm">
+        <fieldset>
+            <legend>Inserire i dati</legend>
+            <label for="txtusername">Inserire username</label>
+            <input type="text" id="txtusername" name="username" placeholder="inserire username">
+        </fieldset>
+        <br>
+        <br>
+        <label for="javascript">Javascript</label>
+        <input type="radio" name="linguaggio" value="javascript" id="javascript" checked>
+        <label for="css">Css</label>
+        <input type="radio" name="linguaggio" value="css" id="css">
+        <label for="html">Html</label>
+        <input type="radio" name="linguaggio" value="html" id="html">
+        <br>
+        <br>
+        <div style="border: solid 1px black; display: flex; flex-direction: column; padding: 1rem;">
+            <label for="chkCondizioni">Accetta le condizioni di utilizzo</label>
+            <input type="checkbox" id="chkCondizioni" name="condizioni" checked>
+
+            <!-- <input type="submit" value="Invia"> -->
+            <label for="pwd">Inserisci la password</label>
+            <input type="password" name="password" id="pwd">
+
+            <label for="birthday">Data di nascita</label>
+            <input type="date" name="birthday" id="birthday">
+
+            <label for="prenotazione">Data di prenotazione</label>
+            <!-- <input type="datetime-local" name="prenotazione" id="prenotazione"> -->
+            <input type="datetime-local" name="prenotazione" id="prenotazione">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="myfile">Selezioa un file:</label>
+            <input type="file" name="myfile" id="myfile">
+
+
+            <input type="hidden" name="">
+            <!-- utilizzato per informazioni necessarie al backend esempio utente che ha inviato il form-->
+            
+            <label for="qta">Quantit&aacute;</label>
+            <!-- <input type="number" name="qta" id="qta" min="0" max="10" value="2" readonly disabled> -->
+            <input type="number" name="qta" id="qta" min="0" max="10" step="2" placeholder="inserisci la quantit&aacute;" style="width: 12rem;">
+
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="select"></label>
+            <select name="modello" id="">
+                <option value="" selected>Seeziona un modello</option>
+                <option value="bmw">Bmw</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="fiat">Fiat</option>
+            </select>
+
+            <label for="commento">Commento</label>
+            <textarea name="commento" id="commento" cols="30" rows="8"></textarea>
+
+            <button type="submit">Invia</button>
+            <input type="reset">
+            <input type="button" onclick="alert('Hello World!')" value="Cliccami!">
+        </div>
+    </form>
+</body>
+</html>

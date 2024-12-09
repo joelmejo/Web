@@ -1,0 +1,105 @@
+<!-- Il form deve avere:
+un input per il nome e cognome
+
+un input per l'indirizzo email del mittente
+
+un input per il subject
+
+un input a tendina (select) per la selezione del linguaggio di programmazione preferito tra Java, Javascript, C#, Python, Go
+
+un input per radio per la selezione del sesso
+
+un input per inserire l'etá
+
+in input multilinea per una descrizione
+
+L'accettazione della privacy policy con la label cliccabile che porta ad una pagina simil privacy policy (prendetene una qualunque e create la pagina)
+
+Pulsante di submit e pulsante di reset -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            margin: 1rem;
+        }
+
+        select {
+            margin: 1rem;
+        }
+
+        input:hover {
+            background-color: beige;
+            border-color: aquamarine;
+        }
+
+        textarea:hover {
+            background-color: beige;
+            border-color: aquamarine;
+        }
+
+        select {
+            background-color: white;
+        }
+
+        select:hover {
+            background-color: beige;
+            border-color: aquamarine;
+        }
+
+        button {
+            background-color: white;
+            border-radius: 0.4rem;
+        }
+        button:hover {
+            background-color: beige;
+            border-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body style="background-color: antiquewhite; display: flex; justify-content: center;">
+    
+    <form action="">
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 1rem; border: 1px solid black; background-color: wheat; justify-items: center;">    
+            <h2>Modulo di feedback</h2>
+            <label for="name">Nome</label>
+            <input type="text" name="nome" id="name" placeholder="Inserisca il suo nome">
+            <label for="surname">Cognome</label>
+            <input type="text" name="cognome" id="surname" placeholder="Inserisca il suo cognome">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Inserisca la sua email">
+            <label for="subject">Oggetto</label>
+            <input type="text" name="Oggetto" id="subject" placeholder="Inserisca l'oggetto">
+            <label for="language">Linguaggio preferito</label>
+            <select name="linguaggio" id="select">
+                <option value="" selected>Seleziona un linguaggio</option>
+                <option value="java">Java</option>
+                <option value="javascript">Javascript</option>
+                <option value="c#">C#</option>
+                <option value="python">Python</option>
+                <option value="go">Go</option>
+            </select>
+            <fieldset style="border: transparent; width: fit-content; padding-top: 1rem;">
+                <legend>Sesso</legend>
+                <label for="male">M</label>
+                <input type="radio" name="sesso" id="male">
+                <label for="female">F</label>
+                <input type="radio" name="sesso" id="female">
+            </fieldset>
+            <label for="age">Et&aacute;</label>
+            <input type="number" name="eta" id="age" min="0" max="140">
+            <label for="description">Descrizione</label>
+            <textarea name="descrizione" id="description" rows="10" cols="30"></textarea>
+            <label for="privacy">Accettazione della <a href="privacy.html">privacy policy</a>(obbligatorio)</label>
+            <input type="checkbox" name="privacy" id="privacy" required>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>
